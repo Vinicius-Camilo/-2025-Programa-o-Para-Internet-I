@@ -7,4 +7,4 @@ Este projeto é uma aplicação web simples em Flask que permite aplicar filtros
 1. Clone este repositório:
    ```bash
    git clone https://github.com/Vinicius-Camilo/-2025-Programa-o-Para-Internet-I/blob/main/Trabalho-01/Image-Filter
-   cd image_filter_app
+   cd /Trabalho-01/Image-Filter

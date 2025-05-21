@@ -30,7 +30,7 @@ Este projeto é uma aplicação web desenvolvida em **Flask** e **Pillow** que p
    ```bash
    git clone https://github.com/Vinicius-Camilo/-2025-Programa-o-Para-Internet-I/blob/main/
    cd /Trabalho-01/Image-Filter
-
+   pip install requirements.txt
 ## ▶️ Execução da Aplicação
 
 Inicialize o servidor Flask:
@@ -43,4 +43,3 @@ Acesse no navegador:
 Abra seu navegador de preferência e navegue até:
 ```bash
 http://127.0.0.1:5000
-

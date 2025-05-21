@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicador de Filtros</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 20px auto; }
+        .imagens { display: flex; gap: 20px; }
+        .imagens img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <h1>Aplicador de Filtros de Imagem</h1>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="imagem" accept="image/png, image/jpeg" required><br><br>
+        <select name="filtro" required>
+            <option value="negativo">Filtro Negativo</option>
+            <option value="mediana">Filtro da Mediana</option>
+            <option value="gaussiano">Filtro Gaussiano</option>
+            <option value="sepia">Filtro Sépia</option>
+        </select><br><br>
+        <button type="submit">Aplicar Filtro</button>
+    </form>
+
+    {% if original and processada %}
+    <div class="imagens">
+        <div>
+            <h3>Original</h3>
+            <img src="{{ original }}" alt="Original">
+        </div>
+        <div>
+            <h3>Processada</h3>
+            <img src="{{ processada }}" alt="Processada">
+            <br><br>
+            <a href="{{ processada }}" download>Baixar imagem processada</a>
+        </div>
+    </div>
+    {% endif %}
+</body>
+</html>
